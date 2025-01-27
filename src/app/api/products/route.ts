@@ -7,7 +7,7 @@ import path from "node:path";
 
 export async function POST (request : Request){
     const data = await request.formData()
-
+      // console.log(process.env.NEXT_AUTH_SECRET)
     let validateData;
      try {
         validateData = productSchema.parse({
